@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     keymap {
@@ -34,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5     &kp N6   &kp N7          &kp N8     &kp N9            &kp N0             &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6   &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW      &kp RIGHT          &trans
-                        &trans  &trans   &trans     &trans   &trans          &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5     &kp N6    &kp N7     &kp N8        &kp N9            &kp N0             &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6    &kp MINUS  &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT         &kp F12            &trans
+                        &trans  &trans   &trans     &trans    &trans     &trans
             >;
         };
 
@@ -51,7 +52,7 @@
             bindings = <
 &trans  &kp EXCL   &kp AT     &kp HASH         &kp DLLR     &kp PRCNT        &kp CARET          &kp AMPS        &kp ASTRK  &kp LPAR        &kp RPAR         &trans
 &trans  &kp GRAVE  &kp TILDE  &kp BACKSLASH    &kp APOS     &kp DEL          &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&trans  &kp HOME   &kp END    &kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN    &kp KP_NUMLOCK     &trans          &trans     &trans          &trans           &trans
+&trans  &kp HOME   &kp END    &kp PRINTSCREEN  &kp PAGE_UP  &kp PAGE_DOWN    &kp KP_NUMLOCK     &trans          &trans     &trans          &out OUT_TOG     &trans
                               &trans           &trans       &trans           &trans             &trans          &trans
             >;
         };
