@@ -11,6 +11,33 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    behaviors {
+        homerowleft: homerowleft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROWLEFT";
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <36 37 38 39 40 41 6 18 30 31 19 7 8 20 32 33 21 9 10 22 34 35 23 11>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        homerowright: homerowright {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROWRIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
