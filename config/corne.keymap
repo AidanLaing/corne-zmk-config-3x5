@@ -25,7 +25,7 @@
 &none  &kp Q           &kp W           &kp E         &kp R             &kp T        &kp Y        &kp U              &kp I            &kp O            &kp P               &none
 &none  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G        &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K      &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &none
 &none  &kp Z           &kp X           &kp C         &kp V             &kp B        &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH           &none
-                                       &lt 2 ESCAPE  &lt 1 SPACE       &lt 0 TAB    &lt 0 ENTER  &lt 3 DELETE       &lt 0 BACKSPACE
+                                       &lt 2 ESCAPE  &lt 1 SPACE       &lt 0 TAB    &lt 4 ENTER  &lt 3 DELETE       &lt 0 BACKSPACE
             >;
         };
 
@@ -50,9 +50,18 @@
         number {
             bindings = <
 &none  &kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET    &none  &none      &none      &none     &none     &none
-&none  &kp SINGLE_QUOTE  &kp N4  &kp N5      &kp N6  &kp EQUAL            &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp SINGLE_QUOTE  &kp N4  &kp N5      &kp N6  &kp EQUAL            &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
 &none  &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &none  &none      &none      &none     &none     &none
                                  &kp PERIOD  &kp N0  &kp MINUS            &none  &none      &none
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &kp LEFT_BRACE     &kp AMPS    &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp DOUBLE_QUOTES  &kp DOLLAR  &kp PERCENT           &kp CARET              &kp PLUS           &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &kp TILDE          &kp EXCL    &kp AT                &kp HASH               &kp PIPE           &trans  &trans     &trans     &trans    &trans    &trans
+                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER          &trans  &trans     &trans
             >;
         };
     };
