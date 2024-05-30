@@ -47,12 +47,7 @@
         toggle_gaming {
             bindings = <&tog 7>;
             key-positions = <1 25 10 34>;
-            layers = <0>;
-        };
-
-        toggle_base {
-            bindings = <&tog 0>;
-            key-positions = <1 25 10 34>;
+            layers = <0 7>;
         };
     };
 
